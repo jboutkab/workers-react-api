@@ -30,7 +30,7 @@ function App() {
     const results = await getImages(query)
     setImages(results)
   }
-  const search = async () => {
+  const otherSearch = async () => {
     const results = await getImages('razer')
     setImages(results)
   }
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={search1}>Re-render</button>
+      <button onClick={otherSearch}>Razer</button>
       <div class="form">
         <input id="query" type="text" onChange={updateQuery} placeholder="Search query" />
         <button onClick={search}>Search</button>
