@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react'
+import { ususeEffect,eState } from 'react'
 
 // A function to make requests to our Workers API using a query
 const getImages = async query => {
@@ -30,12 +30,17 @@ function App() {
     const results = await getImages(query)
     setImages(results)
   }
+  const search = async () => {
+    const results = await getImages('razer')
+    setImages(results)
+  }
 
   // When input#query changes, set query to the value of the input 
   const updateQuery = evt => setQuery(evt.target.value)
 
   return (
     <div className="App">
+      <button onClick={search1}>Re-render</button>
       <div class="form">
         <input id="query" type="text" onChange={updateQuery} placeholder="Search query" />
         <button onClick={search}>Search</button>
