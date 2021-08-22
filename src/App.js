@@ -1,5 +1,5 @@
 import './App.css';
-import { ususeEffect,eState } from 'react'
+import { usEffect,useState } from 'react'
 
 // A function to make requests to our Workers API using a query
 const getImages = async query => {
