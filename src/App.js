@@ -17,7 +17,8 @@ const getImages = async query => {
   })
   return resp.json()
 }
-console.log("new commit");
+//Console log
+console.log("new commit razer test1");
 
 function App() {
   // Store the query that we'll search for in a simple useState hook
