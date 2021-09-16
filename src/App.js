@@ -16,6 +16,7 @@ const getImages = async query => {
     headers: { 'Content-type': 'application/json' }
   })
   return resp.json()
+/ttt
 }
 //Console log
 console.log("new commit razer test 2");
